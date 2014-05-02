@@ -38,6 +38,8 @@ grb_git_prompt() {
     fi
 }
 
-source ~/bin/git-completion.bash
+if [-f ~/bin/git-completion.bash]; then
+    source ~/bin/git-completion.bash
+fi
 
 PS1="\u:\W\$(grb_git_prompt)\[\e[0m\]\$ "
