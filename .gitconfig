@@ -1,0 +1,27 @@
+[user]
+	name = Kevin Klaes
+	email = kevin.klaes@gmail.com
+[push]
+	default = simple
+[color]
+	ui = auto
+[alias]
+	st = status
+	ci = commit
+	co = checkout
+	di = diff
+	dc = diff --cached
+	amend = commit --amend
+	aa = add --all
+	ff = merge --ff-only
+	pullff = pull --ff-only
+	fa = fetch --all
+	p = push origin master
+	b = branch
+	ds = diff --stat=160,120
+	dh1 = diff HEAD~1
+
+	l = "!source ~/.githelpers && pretty_git_log"
+	la = !git l --all
+	r = !git l -30
+	ra = !git r --all
